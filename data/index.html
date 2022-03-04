@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DependenTree</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        height: 800px;
+        width: 1200px;
+      }
+
+      #tree {
+        height: 800px;
+        width: 1200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tree"></div>
+    <script src="main.js" type="text/javascript"></script>
+    <script src="testData.js" type="text/javascript"></script>
+    <script>
+      const { royals, rps, BinaryTreeMaker, LinkedListMaker } = testData;
+
+      // default options
+      const options = {
+        // behavior options
+
+        // animationDuration: 750,
+        // maxDepth: 25,
+        // enableTooltip: true,
+        // enableTooltipKey: true,
+        // modifyEntityName: null,
+        // textClick: null,
+        // maxDepthMessage: null,
+        // missingEntityMessage: null,
+        // cyclicDependencyMessage: null,
+
+        // appearance options
+
+        // containerWidthMultiplier: 4,
+        // containerWidthInPx: null,
+        // marginTop: 60,
+        // marginRight: 120,
+        // marginBottom: 200,
+        // marginLeft: 120 ,
+        // parentNodeTextOrientation: 'left',
+        // childNodeTextOrientation: 'right',
+        // textOffset: 13,
+        // textStyleFont: '12px sans-serif',
+        // textStyleColor: 'black',
+        // circleStrokeColor: 'steelblue',
+        // circleStrokeWidth: 3,
+        // circleSize: 10,
+        // linkStrokeColor: '#dddddd',
+        // linkStrokeWidth: 2,
+        // closedNodeCircleColor: 'lightsteelblue',
+        // openNodeCircleColor: 'white',
+        // cyclicNodeColor: '#FF4242',
+        // missingNodeColor: '#E8F086',
+        // maxDepthNodeColor: '#A691AE',
+        // horizontalSpaceBetweenNodes: 180,
+        // verticalSpaceBetweenNodes: 30,
+        // wrapNodeName: true,
+        // splitStr: null,
+        // tooltipItemStyleObj: {
+        //   'font-family': 'sans-serif',
+        //   'font-size': '12px',
+        // },
+        // tooltipColonStr: ': ',
+        // tooltipKeyStyleObj: { 'font-weight': 'bold' },
+        // tooltipColonStyleObj: { 'font-weight': 'bold' },
+        // tooltipValueStyleObj: {},
+        // tooltipStyleObj: {
+        //   'background-color': 'white',
+        //   border: 'solid',
+        //   'border-width': '1px',
+        //   'border-radius': '5px',
+        //   padding: '10px',
+        // },
+
+      };
+
+      // const tree = new DependenTree('div#tree', options);
+
+
+      // tree.addEntities(royals);
+      // tree.setTree('Elizabeth II', 'downstream');
+
+      // tree.setTree('George');
+
+
+      // const ll = new LinkedListMaker();
+      // ll.createLinkedList(30);
+      // tree.addEntities(ll.obj);
+      // tree.setTree('2', 'downstream');
+
+
+      // const bt = new BinaryTreeMaker();
+      // bt.createBinaryTree(5);
+      // tree.addEntities(bt.obj);
+      // tree.setTree('0', 'upstream');
+
+
+      // tree.addEntities(rps);
+      // tree.setTree('rock', 'upstream');
+    </script>
+  </body>
+</html>

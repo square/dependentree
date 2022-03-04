@@ -1,0 +1,59 @@
+{
+  "name": "@square/dependentree",
+  "version": "1.0.1",
+  "description": "A performant visualization library built on top of D3.js which easily converts dependency lists into an interactive tree UI",
+  "main": "src/index.js",
+  "author": "Amogh Kambale <amogh@squareup.com>",
+  "license": "Apache-2.0",
+  "repository": "git@github.com:square/dependentree.git",
+  "sideEffects": false,
+  "scripts": {
+    "start": "yarn serve & yarn build-watch",
+    "serve": "live-server dev",
+    "lint": "eslint --cache .",
+    "lint-fix": "yarn lint --fix",
+    "dev-init": "mkdir dev/ & yarn dev-copy-html & yarn build-dev-data",
+    "dev-copy-html": "cp data/index.html dev/index.html",
+    "build-dev-data": "npx webpack --config webpack/dev-data.js",
+    "build-dev": "npx webpack --config webpack/dev-lib.js",
+    "build-watch": "npx webpack --config webpack/dev-lib.js --watch",
+    "test": "yarn build-test && concurrently --kill-others --success first \"live-server --no-browser --port=8081 tests/page\" \"jest --verbose\"",
+    "test-short": "yarn build-test && concurrently --kill-others --success first \"live-server --no-browser --port=8081 tests/page\" \"jest\"",
+    "test-init": "mkdir tests/page/ & yarn test-copy-html && yarn build-test-data",
+    "test-copy-html": "cp data/index.html tests/page/index.html",
+    "build-test-data": "npx webpack --config webpack/test-data.js",
+    "build-test": "npx webpack --config webpack/test-lib.js",
+    "serve-test": "live-server --no-browser --port=8081 tests/page",
+    "build": "yarn build-min && yarn build-es5 && yarn build-plain",
+    "build-min": "npx webpack --config webpack/prod.min.js",
+    "build-es5": "npx webpack --config webpack/prod.es5.min.js",
+    "build-plain": "npx webpack --config webpack/prod.max.js"
+  },
+
+  "devDependencies": {
+    "concurrently": "^6.5.1",
+    "eslint": "^7.18.0",
+    "eslint-plugin-square": "^17.0.0",
+    "husky": "^4.3.8",
+    "jest": "^26.6.3",
+    "lint-staged": "^10.5.3",
+    "live-server": "^1.2.1",
+    "puppeteer": "^13.0.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "d3": "^6.2.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.hbs": "ember-template-lint",
+    "*.scss": "stylelint --fix"
+  }
+}

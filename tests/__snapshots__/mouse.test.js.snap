@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mouse _mousemove Sets tooltip HTML 1`] = `
+"<ul style=\\"list-style-type:none;margin:0;padding:0\\">
+      <li style=\\"font-family:sans-serif;font-size:12px;\\">
+        <span style=\\"font-weight:bold;\\">Title</span><span style=\\"font-weight:bold;\\">: </span>
+        <span style=\\"\\">
+          Queen
+        </span>
+      </li>
+    </ul>"
+`;
+
+exports[`Mouse _mousemove Sets tooltip style 1`] = `"position: fixed; visibility: hidden; background-color: white; border: 1px solid; border-radius: 5px; padding: 10px;"`;
+
+exports[`Mouse _mousemove enableTooltip option to false does not show tooltip 1`] = `"<div style=\\"position: fixed; visibility: hidden; background-color: white; border: 1px solid; border-radius: 5px; padding: 10px;\\"></div>"`;
+
+exports[`Mouse _mousemove enableTooltipKey option to false does not show key 1`] = `
+"<ul style=\\"list-style-type:none;margin:0;padding:0\\">
+      <li style=\\"font-family:sans-serif;font-size:12px;\\">
+        
+        <span style=\\"\\">
+          Queen
+        </span>
+      </li>
+    </ul>"
+`;
