@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tree Null Inputs SVG 1`] = `"<g></g><g class=\\"node\\" transform=\\"translate(0,0)\\" cursor=\\"pointer\\"><circle r=\\"10\\" style=\\"stroke: steelblue; stroke-width: 3px; fill: white;\\"></circle><text dy=\\".35em\\" x=\\"-13\\" text-anchor=\\"end\\" fill=\\"black\\" style=\\"fill-opacity: 1; font: 12px sans-serif;\\"><tspan x=\\"-13\\">Elizabeth II</tspan></text></g>"`;
+
+exports[`Tree Valid Inputs SVG 1`] = `
+"<path d=\\"
+    M 0 0
+    C 0 0, 0 0, 0 0
+  \\" style=\\"fill: none; stroke: rgb(221, 221, 221); stroke-width: 2px;\\"></path><path d=\\"
+    M 0 0
+    C 0 0, 0 0, 0 0
+  \\" style=\\"fill: none; stroke: rgb(221, 221, 221); stroke-width: 2px;\\"></path><path d=\\"
+    M 0 0
+    C 0 0, 0 0, 0 0
+  \\" style=\\"fill: none; stroke: rgb(221, 221, 221); stroke-width: 2px;\\"></path><path d=\\"
+    M 0 0
+    C 0 0, 0 0, 0 0
+  \\" style=\\"fill: none; stroke: rgb(221, 221, 221); stroke-width: 2px;\\"></path><g></g><g class=\\"node\\" transform=\\"translate(0,0)\\" cursor=\\"pointer\\"><circle r=\\"10\\" style=\\"stroke: steelblue; stroke-width: 3px; fill: white;\\"></circle><text dy=\\".35em\\" x=\\"-13\\" text-anchor=\\"end\\" fill=\\"black\\" style=\\"fill-opacity: 1; font: 12px sans-serif;\\"><tspan x=\\"-13\\">Elizabeth II</tspan></text></g><g class=\\"node\\" transform=\\"translate(0,0)\\" cursor=\\"pointer\\"><circle r=\\"10\\" style=\\"stroke: steelblue; stroke-width: 3px; fill: lightsteelblue;\\"></circle><text dy=\\".35em\\" x=\\"-13\\" text-anchor=\\"end\\" fill=\\"black\\" style=\\"fill-opacity: 1; font: 12px sans-serif;\\"><tspan x=\\"-13\\">Charles</tspan></text></g><g class=\\"node\\" transform=\\"translate(0,0)\\" cursor=\\"pointer\\"><circle r=\\"10\\" style=\\"stroke: steelblue; stroke-width: 3px; fill: lightsteelblue;\\"></circle><text dy=\\".35em\\" x=\\"-13\\" text-anchor=\\"end\\" fill=\\"black\\" style=\\"fill-opacity: 1; font: 12px sans-serif;\\"><tspan x=\\"-13\\">Anne</tspan></text></g><g class=\\"node\\" transform=\\"translate(0,0)\\" cursor=\\"pointer\\"><circle r=\\"10\\" style=\\"stroke: steelblue; stroke-width: 3px; fill: lightsteelblue;\\"></circle><text dy=\\".35em\\" x=\\"-13\\" text-anchor=\\"end\\" fill=\\"black\\" style=\\"fill-opacity: 1; font: 12px sans-serif;\\"><tspan x=\\"-13\\">Andrew</tspan></text></g><g class=\\"node\\" transform=\\"translate(0,0)\\" cursor=\\"pointer\\"><circle r=\\"10\\" style=\\"stroke: steelblue; stroke-width: 3px; fill: lightsteelblue;\\"></circle><text dy=\\".35em\\" x=\\"-13\\" text-anchor=\\"end\\" fill=\\"black\\" style=\\"fill-opacity: 1; font: 12px sans-serif;\\"><tspan x=\\"-13\\">Edward</tspan></text></g>"
+`;
