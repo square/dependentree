@@ -27,6 +27,7 @@ module.exports = {
       export: 'default',
       type: 'umd',
     },
+    globalObject: 'this',
   },
   plugins: [new webpack.BannerPlugin(copyright)],
 };

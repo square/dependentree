@@ -1,8 +1,12 @@
 {
   "name": "@square/dependentree",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A performant visualization library built on top of D3.js which easily converts dependency lists into an interactive tree UI",
   "main": "src/index.js",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./dist/dependentree.js"
+  },
   "author": "Amogh Kambale <amogh@squareup.com>",
   "license": "Apache-2.0",
   "repository": "git@github.com:square/dependentree.git",
@@ -29,7 +33,6 @@
     "build-es5": "npx webpack --config webpack/prod.es5.min.js",
     "build-plain": "npx webpack --config webpack/prod.max.js"
   },
-
   "devDependencies": {
     "concurrently": "^6.5.1",
     "eslint": "^7.18.0",

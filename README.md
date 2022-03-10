@@ -145,14 +145,15 @@ yarn add @square/dependentree
 
 Import the `DependenTree` class
 
+It is best to use `import` statements and allow your application to bundle the code from `src/index.js`. Using `require()` statements will pull from `/dist/dependentree.js` which comes already bundled.
+
 ```javascript
-// import class as a module
 import DependenTree from '@square/dependentree';
 
-// or if using require, the class will be found under default
-const DependenTree = require('@square/dependentree').default;
+const DependenTree = require('@square/dependentree');
+```
 
-
+```javascript
 import royals from './testData';
 
 // Creates an instance of the class
@@ -569,7 +570,7 @@ const textClick = (event, nodeData) => {
 ## Resources
 
 - [Live Playground](https://observablehq.com/@amogh/dependentree)
-<!-- - [npm]() -->
+- [npm](https://www.npmjs.com/package/@square/dependentree)
 <!-- - [Blog]() -->
 
 
